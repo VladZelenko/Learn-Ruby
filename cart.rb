@@ -14,4 +14,7 @@ class Cart
     @items.pop
   end
 
+  def validate
+    @items.each { |i| puts "Не установленна цена " if i.price.nil?}
+  end
 end
